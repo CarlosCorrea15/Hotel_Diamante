@@ -1,0 +1,405 @@
+
+
+/* El siguiente es el Header que contiene el Jumbotron o presentación */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    margin-bottom: 0px;
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.icono-principal {
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-diamante {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.jumbotron {
+    max-width: 100%;;
+}
+
+
+/* La siguiente sección correponde al div.navegación que contiene el nav.navegador, y los botones que contiene */
+
+.navegacion {
+    margin-top: 1px;
+
+    background-color: whitesmoke;
+
+    position: sticky;
+    top: 2px;
+    z-index: 11;
+}
+
+.navegador {
+    white-space: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.5);
+    padding: 0.75rem;
+    margin-top: 0px;
+
+}
+
+.btn-outline-dark {
+    margin: 10px;
+}
+
+.navi {
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem;
+}
+
+.navi:hover {
+    color: white;
+}
+
+/*  Presentación del Hotel  */
+
+.Presentacion {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 3rem;
+    margin: auto ;
+    margin-bottom: 3rem;
+
+}
+
+div.Presentacion-Hotel {
+    width: 40vw;
+    height: auto;
+    font-size: 1.5vw;
+
+}
+
+.Foto-Hotel-Diamante {
+    max-width: 50%;
+    height: auto;
+
+}
+
+.hotel-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Aqui va la galeria de imagenes de habitaciones del hotel */
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.img-galeria {
+    display: flex;
+
+    width: 800px;
+    height: 600px;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.galeria {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+
+    
+}
+
+.galeria:hover {
+    cursor: pointer;
+    width: 400px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/*  Aqui Inicia una explicación breve de lo que es Calima */
+
+.titulo-3 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section.El-Darien {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.historia-y-imgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+article.historia-darien {
+    background-color: azure;
+    padding: 15px;
+    margin: 15px;
+
+    height: 480px;
+    width: 520px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+p.historia {
+    justify-content: center;
+    height: auto;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+div.imgs-darien {
+    margin-right: 10%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+}
+
+.imagenes-lago {
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    
+    opacity: 0.8;
+    transition: 0.5s ease;
+
+
+}
+
+.imagenes-lago:hover {
+    cursor: pointer;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+/* Aquí inicia la sección de servicios */
+
+h2.titulo-servicios {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+
+.servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ofertas{
+    border-color: crimson;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-spacing: 2px;
+    border: slategray;
+    border-radius: 10px;
+    background: whitesmoke;
+    margin: 20px 25px;
+    padding: 5px;
+    text-align:center;
+    width: 30%;
+    
+
+}
+
+.money{
+    font-size: 35px;
+    color: slategray;
+}
+.btn-money{
+    text-decoration: none;
+    color: blue;
+    text-shadow: 5px;
+    background-color: wheat;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    
+}
+.btn-money:hover{
+    background-color: rgb(96, 221, 96);
+}
+.tit{
+    font-size: 35px;
+    color: tomato;
+}
+
+
+/* Aqui inicia el footer, contiene la información de contacto y un mapa de localización Y EL BOTÓN DE WHATSAPP */
+
+
+
+footer.contactenos {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    font-size: larger;
+    line-height: 2.5;
+    text-align: justify;
+}
+
+.mapita{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapouter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+
+/* A continuación esta el boton fijado de watsapp en la parte inferior derecha, el boton y contenedor que lo componen*/
+
+.boton-whatsapp {
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+    background-color: transparent;
+    z-index: 10;
+
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    transition: background-color 150ms;
+    padding: 0%;
+}
+
+.icono-whatsapp {
+    width: 50%;
+    height: auto;
+}
+
+.boton-whatsapp:hover {
+    opacity: 0.7;
+}
+
+.tooltiptext {
+    position: absolute;
+    top: 5%;
+    left: -90%;
+
+    color: #ddd;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    /*visibility: hidden; */    /*  Sirve para invisibilizar el tooltip, pero vamos a usar Opacity con valor de 0 que hace lo mismo  */
+    opacity: 0;    /*  La opacidad se mide con valor entre 0 que significa nada y 1 que significa total. en este caso el tooltip es invisible por tener opacidad de 0  */
+    transition: opacity 0.4s;
+    transform: translateX(25%);
+}
+
+.boton-whatsapp:hover .tooltiptext {
+    /*visibility: visible;*/    /*  Esta es una forma de hacer aparecer el tooltip sobre el boton */
+    opacity: 1;   /* Aqui el tooltip es visible por tener opasidad de 1 */
+
+}
+/*  Aqui termina el botón de whatsapp y el tooltip */
+
+
+
+
+/* Aqui inicia MediaQuery  */
+
+.menu {
+    
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menubott{
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    margin: 30px;
+    border: solid 3px;
+    border-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    display: none;
+}
+.menubott:hover{
+    background: darkslategray ;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .navegador{
+        flex-direction: column;
+    }
+
+    .menubott{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+
+}
+

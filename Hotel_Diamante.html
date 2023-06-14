@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Diamante</title>
+
+    <link rel="stylesheet" href="Hotel_Diamante.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!--  Esta parte Inicial que corresponde al Header y a la barra de navegación--->
+    <header>
+      <div id="icn-principal" class="icono-principal">
+        <img class="img-diamante" src="../Hotel Diamante/Logos_hOTEL/Logo-Diamante.jpg" alt="Logo Logo-Diamante">
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">HOTEL DIAMANTE</h1>
+          <p class="lead">Servio de alojamiento cómodo, rápido y seguro para nuestros clientes en estadías cortas o largas brindando nuestro mejor servicio.</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="navegacion navbar navbar-expand-lg bg-body-tertiary ">
+
+      <nav class="navegador container-fluid menu">
+        <button class="menubott" onclick = "accion()" >Menu</button>
+
+        <button type="button" class="btn btn-outline-dark desaparece mor" class="btton"><a class="navi" href="#icn-principal">Inicio</a></button>
+        <button type="button" class="btn btn-outline-dark desaparece mor" class="btton"><a class="navi" href="#Hotel">Nosotros</a></button>
+        <button type="button" class="btn btn-outline-dark desaparece mor" class="btton"><a class="navi" href="#H-Darien">El Darien</a></button>
+        <button type="button" class="btn btn-outline-dark desaparece mor" class="btton"><a class="navi" href="#N-servicios">Servicios</a></button>
+        <button type="button" class="btn btn-outline-dark desaparece mor" class="btton"><a class="navi" href="#localizacion">Contactenos</a></button>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="¿Que deseas buscar...?" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Buscar</button>
+        </form>
+
+      </nav>
+
+        <!--En este apartado vamos a utilizar un boton de 'menu' con Java Script -->
+      <script>
+
+        function accion(){
+            console.log('Esta funcionando mi boton');
+            var ancla = document.getElementsByClassName('mor');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+                
+            }
+        }
+
+      </script>
+    <!--Aqui termina el parentesis de Java script-->
+
+    </div>
+
+    
+
+
+    <!--- Acontinuación siguen la sección "Nosotros" la cual presenta al hotel--->
+
+    <section id="Hotel" class="Presentacion">
+      <div class="Presentacion-Hotel" class=" animate__fadeInLeftBig">
+        <h1>Que Somos? El Mejor Hotel De La Región</h1>
+        <p>Estamos ubicados en el Valle del Cauca, en el municipio de Calima Darién. Nuestros servicios van desde alojamiento, piscina y spa, hasta caminatas y senderismo. Ven, descansa y disfruta del aire limpio de las montañas y disfruta del Lago Calima que ofrece multples actividades acuaticas y recreativas.</p>
+      </div>
+      <div class="Foto-Hotel-Diamante animate__fadeInLeftBig" >
+        <img class="hotel-img" src="../Hotel Diamante/img-Hotel/Hotel.jpg" alt="Imagen Exterior del Hotel Diamante">
+      </div>
+    </section>
+
+    <div class="contenedor-galeria">
+      <h2 class="titulo_2">Conoce algunas de nuestra habitaciones</h2>
+      <section class="img-galeria">
+        <img class="galeria" src="../Hotel Diamante/img-Hotel/habitacion_1.jpg" alt="habitaciones">
+        <img class="galeria" src="../Hotel Diamante/img-Hotel/habitacion_2.jpg" alt="habitaciones">
+        <img class="galeria" src="../Hotel Diamante/img-Hotel/habitacion_3.jpg" alt="habitaciones">
+        <img class="galeria" src="../Hotel Diamante/img-Hotel/habitacion_4.jpg" alt="habitaciones">
+        <img class="galeria" src="../Hotel Diamante/img-Hotel/habitacion_5.jpg" alt="habitaciones">
+
+      </section>
+    </div>
+
+    <!--Acontinuación presenta El Darien, habla un poco de la región, invita a conocerla y muestra fotografías-->
+    <h2 class="titulo-3" >Conoce el Lago Calima</h2>
+    <section id="H-Darien" class="El-Darien">
+
+      <div class="historia">
+        <article class="historia-darien">
+        <h3>El Lago Calima</h3>
+        <p class="historia">El embalse Calima, tambien conocido como <strong> Lago Calima </strong>, es uno de los embalses más grandes de América, con una superficie de 19.34 kilómetros cuadrados. Se encuentra en el municipio de Calima El Darién en el Valle del Cauca. El lago forma parte del proyecto hidroeléctrico para generar energía para el departamento <strong>C.V.C</strong> (Corporación Autónoma Regional del Valle del Cauca), comenzó la construcción del embalse en el año 1961 y acabó en 1966. En años posteriores se convertiría en un atractivo turístico; por ello, se instalaron a su alrededor hoteles, centros recreacionales y parcelaciones.</p>
+        <p class="historia">Calima es un municipio colombiano del departamento del Valle del Cauca fundado, principalmente, <em> "...por colonos vallecaucanos, y además, de antioqueños y caldenses" </em>. Está situado a 86 km de Cali, la temperatura media es de 18 °C, con una población total de 18.469 habitantes, considerado municipio desde 1939 y fundado en 1907 y su extensión total es de 1154 km². Su cabecera municipal se llama El Darién. El municipio se llama Calima <em> en referencia a su tradicional neblina (calima o calina) </em> que entra a la cuenca del Lago Calima por el cañón del río Bravo rutinariamente en las tardes, y debido a que laregión fue habitada por la gente de la cultura calima en la antigüedad. La cabecera del municipio se llamó Darién, porque uno de sus fundadores, Don <strong> Nicolás Restrepo</strong>, le encontró parecido con unosparajes de la región del Darién, en el departamento del Chocó. La superficie del municipio es la tercera más grande del valle del cauca después de Buenaventura y Dagua, la densidad de población es de 8,9 habitantes por km², la menor del departamento. Comprende las cuencas del río Bravo y del río Calima y la mayor parte de la cordillera de la Cerbatana, tierras virtualmente desoladas.</p>
+        </article>
+      </div>
+
+      <div class="imgs-darien">
+        <img src="../Hotel Diamante/img-LagoCalima/calima_1.jpg" alt="Calima-Lago" class="imagenes-lago">
+        <img src="../Hotel Diamante/img-LagoCalima/calima_2.jpg" alt="Calima-Lago" class="imagenes-lago">
+        <img src="../Hotel Diamante/img-LagoCalima/calima_4.jpg" alt="Calima-Lago" class="imagenes-lago">
+      </div>
+      
+    </section>
+
+    <!--La siguiente ya es la oferta de servicios, debe tener la opcion de alojamiento, Spa, y senderísmo-->
+    <h2 class="titulo-servicios">Servicios</h2>
+    <section id="N-servicios" class="servicios">
+      <div class="ofertas">
+          <h2 class="tit">Plan Uno</h2>
+          <p class="money"> 500k</p>
+          <p>Habitacion Tres Noches</p>
+          <hr>
+          <p>Consta de una cama</p>
+          <p>Entrada independiente</p>
+          <p>Baño privado</p>
+          <hr>
+          <a href="#" class="btn-money">Alquilar</a>
+      </div>
+      <div class="ofertas">
+          <h2 class="tit">Plan Dos</h2>
+          <p class="money"> 500k</p>
+          <p>Habitacion Una Noche</p>
+          <hr>
+          <p>Consta de una cama</p>
+          <p>Entrada independiente</p>
+          <p>Baño privado</p>
+          <hr>
+          <a href="#" class="btn-money">Alquilar</a>
+      </div>
+      <div class="ofertas">
+          <h2 class="tit">Plan Tres</h2>
+          <p class="money"> 500k</p>
+          <p>Servicio de Spa</p>
+          <hr>
+          <p>Consta de Masajes</p>
+          <p>Entrada Terapia Hidrica</p>
+          <p>Baño exfoliante</p>
+          <hr>
+          <a href="#" class="btn-money">Alquilar</a>
+      </div>
+      <div class="ofertas">
+          <h2 class="tit">Plan Cuatro</h2>
+          <p class="money"> 500k</p>
+          <p>Senderismo</p>
+          <hr>
+          <p>Consta de caminata grupal</p>
+          <p>Recorrido en Bosques</p>
+          <p>Refrigerio</p>
+          <hr>
+          <a href="#" class="btn-money">Alquilar</a>
+      </div>
+      <div class="ofertas">
+          <h2 class="tit">Plan Cinco</h2>
+          <p class="money"> 500k</p>
+          <p>Recorrido en Lancha</p>
+          <hr>
+          <p>Consta de vuelta al lago</p>
+          <p>Recreación nautica</p>
+          <p>Refrigerio</p>
+          <hr>
+          <a href="#" class="btn-money">Alquilar</a>
+      </div>
+      <div class="ofertas">
+          <h2 class="tit">Plan Seis</h2>
+          <p class="money"> 500k</p>
+          <p>Yoga</p>
+          <hr>
+          <p>Consta de sesion de Yoga</p>
+          <p>Pesca en lago privado</p>
+          <p>Hidratación</p>
+          <hr>
+          <a href="#" class="btn-money">Alquilar</a>
+      </div>
+    </section>
+
+
+    <!--Finalmente está el Footer que trata el Contactenos. Aqui debe ir la dirección, numero de teléfono correo electrónico y un mapa satelital insertado con google maps. Tambien contiene el botón de whatsapp en la parte inferior de la pantalla.-->
+
+    <footer id="localizacion" class="contactenos">
+      <div class="contact">
+        
+        <ul>
+          <h2>Contactenos</h2>
+          <li>Calima Darien</li>
+          <li>Ubicación: Calle 46 # 13-50</li>
+          <li>Tel: 3003656904 - 3155535277</li>
+          <li>Email: hotel.diamante@correodeejemplo.edu.co</li>
+        </ul>
+      </div>
+
+      <div class="mapita">
+        <h3>Mapa</h3>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe width="828" height="696" id="gmap_canvas" src="https://maps.google.com/maps?q=Lago+Calima&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://online.stopwatch-timer.net/"></a>
+
+              <br>
+              
+              <style>.mapouter{position: relative;text-align: right;height: 300px;width: 400px;}</style>
+              <a href="https://www.embedmaps.co">embed google maps api</a>
+              <style>.gmap_canvas{overflow: hidden;background: none !important;height: 300px;width: 650px;}</style>
+          </div>
+      </div>
+    </footer>
+    
+    <button class="boton-whatsapp" class="btn-tooltip" data-tooltip="Esto es un tooltip">
+      <img class="icono-whatsapp" src="../Hotel Diamante/Logos_hOTEL/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png (1).jpg" alt="Imagen"><span class="tooltiptext">Contacta con Nosotros</span></button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
